@@ -6,7 +6,7 @@
 /*   By: lfranca- <lfranca-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/16 17:31:58 by lfranca-          #+#    #+#             */
-/*   Updated: 2021/06/30 18:19:15 by lfranca-         ###   ########.fr       */
+/*   Updated: 2021/06/30 21:44:26 by lfranca-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,7 +57,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	if (!s1 || !s2)
 		return (NULL);
 	sum_sizes = ft_strlen(s1) + ft_strlen(s2) + 1;
-	new_s = malloc(sum_sizes);
+	new_s = (char *)malloc(sum_sizes);
 	i = 0;
 	j = 0;
 	if (new_s == NULL)
